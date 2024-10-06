@@ -70,7 +70,7 @@ a{
 
 /* Header */
 
-.icon {
+.icon-header{
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -95,6 +95,7 @@ a{
 .navbar-item:focus{
     color: #404bbf;
 }
+
 
 .address {
     font-style: normal;
@@ -142,11 +143,16 @@ a{
 /* Hero Section */
 
 .hero-section{
-    background: #2e2f42;
     padding-top: 188px;
     padding-bottom: 188px;
-
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
+
 .hero-title {
     max-width: 496px;
     font-weight: 700;
@@ -244,7 +250,6 @@ button:focus{
     display: flex;
     flex-direction: column;
     padding: 32px 0;
-
 }
 
 .team-list{
@@ -254,17 +259,36 @@ button:focus{
     justify-content: center;
 }
 
-/* Portfolio Section */
-
-/* .portfolio-item {
-    margin-top: 32px;
-    padding-left: 16px;
+.app-links{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
 }
 
-.portfolio-describtion {
-    margin-bottom: 32px;
-    padding-left: 16px;
-} */
+.app-links .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+}
+
+.app-links .link:hover,
+.app-links .link:focus {
+    background-color: #404bbf;
+}
+
+
+
+
+
+/* Portfolio Section */
 
 .portfolio-list{
     align-items: center;
@@ -311,4 +335,36 @@ button:focus{
 
 .footer-description {
     color: #f4f4fd;
+}
+.social-media-footer{
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+}
+.footer-container{
+    display: flex;
+    gap: 120px;
+}
+.app-links-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+.app-links-footer .link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4d5ae5;
+}
+
+.app-links-footer .link:hover,
+.app-links-footer .link:focus{
+    background-color:#31d0aa;
 }
