@@ -139,15 +139,11 @@ a{
     width: 67px;
 }
 
-
-
 .header-container{
 
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
 }
 
 .header-section{
@@ -240,6 +236,23 @@ button:focus{
 .advantages-list{
     display: flex;
     gap: 24px;
+}
+
+.advantages-box{
+    display: block;
+    position: relative;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    margin-bottom: 8px;
+}
+
+.advantages-icon{
+    position: absolute;
+    top: 24px;
+    right: 100px;
 }
 
 
